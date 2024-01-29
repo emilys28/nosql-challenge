@@ -1,5 +1,5 @@
 # nosql-challenge
-Challenge 12: NoSQL
+Challenge 12: NoSQL for Columbia Data Analytics Bootcamp
 
 # Author
 Emily L Sims
@@ -111,12 +111,14 @@ To receive all points, your Jupyter notebook analysis file must have all of the 
     - count_documents() is used to list the correct number of documents (answer: 41) (2 points)
     - The first result is printed using pprint (2 points)
     - The results are converted to a Pandas DataFrame and displays the first 10 rows (2 points)
+      
 - Question 2: Which establishments in London have a RatingValue greater than or equal to 4? (12 points)
     - A query is correctly performed to find the establishments in London with a RatingValue greater than or equal to 4 (4 points)
     - The query uses the $regex operator to locate the London establishments (2 points)
     - count_documents() is used to list the correct number of documents (answer: 33) (2 points)
     - The first result is printed using pprint (2 points)
     - The results are converted to a Pandas DataFrame and displays the first 10 rows (2 points)
+      
 - Question 3: What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"? (15 points)
     - A query is correctly performed to find the establishments within 0.01 degree of the "Penang Flavours" restaurant (4 points)
     - The query also limits the results to establishments with a RatingValue of 5 (2 points)
@@ -124,6 +126,7 @@ To receive all points, your Jupyter notebook analysis file must have all of the 
     - The query uses the limit() method in PyMongo to limit the results to 5 (2 points)
     - All five results are printed using pprint (3 points)
     - The results are converted to a Pandas DataFrame and displayed (2 points)
+      
 - Question 4: How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas. (20 points)
     - An aggregation pipeline is built to include a match query, group, and sort (3 points)
     - The match query matches documents with a hygiene score of 0 (2 points)
